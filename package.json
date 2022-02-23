@@ -1,0 +1,46 @@
+{
+  "name": "pokemon-game",
+	"displayName": "Pokemon Game",
+	"description": "Guess a pokemon game",
+	"publisher": "shuklaritvik",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.64.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+        "onCommand:pokemon-game.guessnow"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "pokemon-game.guessnow",
+            "title": "Guess a Pokemon"
+
+		}]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shuklaritvik06/GuessPokemon.git"
+	},
+	"icon": "images/icon.png",
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+        "@types/vscode": "^1.64.0",
+        "@types/glob": "^7.2.0",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "14.x",
+        "eslint": "^8.6.0",
+        "glob": "^7.2.0",
+        "mocha": "^9.1.3",
+        "typescript": "^4.5.4",
+        "@vscode/test-electron": "^2.0.3"
+    }
+
+}
