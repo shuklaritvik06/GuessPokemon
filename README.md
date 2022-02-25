@@ -4,4 +4,10 @@
 
 Simple VSCode extension for every Pokemon fan. This extension provides a simple way to play Guess a Poken Game based on the abilities or moves.
 
+**Installation**
+
+```
+ext install shuklaritvik.pokemon-game
+```
+
 **Enjoy!**
